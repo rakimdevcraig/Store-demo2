@@ -79,6 +79,10 @@ router.get('/', (req, res) => {
     res.sendfile(publicPath + '/index.html');
 })
 
+router.get('/cart', (req, res) => {
+    res.sendfile(publicPath + '/cart.html');
+})
+
 //get an item by id
 router.get('/item/:id', (req, res) => {
     const id = req.params.id;

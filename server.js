@@ -25,7 +25,7 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
 
 //set a static folder if we want to serve multiple html pages, & files like css/js
 app.use(express.static(path.join(__dirname, 'public')));
-// app.use(express.static('public'));
+app.use(express.static('public'));
 // app.use('/public' , express.static('public'));
 
 //use routes
